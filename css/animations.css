@@ -1,0 +1,128 @@
+/* @media screen and (max-width: 576px){ */
+    /* Landing Page */
+
+    #landing_page .landing_page_items .col_left .name_bar,
+    #contact .container .col_left .contact_bar{
+        animation: namebar_moving 1.5s ease-in-out infinite;
+    }
+    #landing_page .landing_page_items .col_right a i.fa-arrow-circle-down,
+    #contact .container .col_left a i.fa-arrow-circle-down{
+        animation:arrow_down 0.8s ease infinite;
+    }
+    #landing_page .landing_page_items .col_left{
+        animation: left_content 0.5s ease-in forwards;
+        opacity: 0;
+    }
+    #landing_page .landing_page_items .col_left .landing_page_links a{
+        animation: social_links 0.4s ease-in forwards;
+        animation-delay: 0.7s;
+    }
+    #landing_page .landing_page_items .col_right h6{
+        animation: introduction 0.5s ease-in forwards;
+        animation-delay: 1s;
+    }
+    #landing_page .landing_page_items .col_right h1{
+        animation: right_content 0.5s ease-in forwards;
+        animation-delay: 1.6s ;
+    }
+    #landing_page .landing_page_items .col_right p,
+    #landing_page .landing_page_items .col_right a{
+        animation: mystory 0.5s ease-in forwards;
+        animation-delay: 1.8s;
+    }
+    #landing_page .container nav .logo .bars .bar_up{
+        animation: updown_bar 1.5s ease-in-out infinite;
+    }
+    #landing_page .container nav .logo .bars .bar_mid{
+        animation: updown_bar_mid 1.5s linear infinite;
+    }
+
+
+    /* keyfreams landing page */
+    @keyframes namebar_moving {
+        0%{
+            width: 10px;
+        }
+        50%{
+            width: 100px;
+        }
+        100%{
+            width: 10px ;
+        }
+    }
+    @keyframes arrow_down{
+        0%{
+            transform: translateY(-5px);
+        }
+        50%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(-5px);
+        }
+    }
+    @keyframes updown_bar{
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 100%;
+        }
+        100%{
+            width:0
+        }
+    }
+    @keyframes updown_bar_mid{
+        0%{
+            width: 100%;
+        }
+        50%{
+            width:0;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+    @keyframes left_content {
+        0%{
+            transform: translateX(-90%);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes social_links {
+        0%{
+            transform: scale(5);
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    @keyframes right_content {
+        0%{
+            transform: scale(5);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes introduction{
+        0%{
+            transform: scaleX(5);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes mystory{
+        0%{
+            transform: translateY(200px);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+/* } */

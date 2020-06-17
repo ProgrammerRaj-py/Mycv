@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+
+#landing_page{
+    max-width: 100%;
+    height: 100vh;
+    background-color: #222222;
+}
+#landing_page .container{
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+}
+#landing_page .container nav{
+    max-width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#landing_page .container nav .logo{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgb(255, 59, 0);
+    font-weight: bold;
+}
+#landing_page .container nav .logo .bars{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+#landing_page .container nav .logo .bars .bar{
+    height: 3px;
+    margin-top:3.5px;
+    background-color:rgb(255, 59, 0);
+    
+}
+#landing_page .container nav .logo span{
+    color: rgb(0, 161, 255);
+}
+#landing_page .container nav .logo span i{
+    font-size: 20px;
+    color: rgb(255, 59, 0);
+}
+#landing_page .container nav .nav_items ul{
+    display: flex;
+    list-style: none;
+}
+#landing_page .container nav .nav_items ul li{
+    margin-left: 3rem;
+}
+#landing_page .container nav .nav_items ul li a{
+    font-size: 1.2rem;
+    transition: 0.3s;
+    font-weight: 500;
+    display: inline-block;
+}
+#landing_page .container nav .nav_items ul li a.active{
+    color:rgb(255, 59, 0) ;
+}
+#landing_page .container nav .nav_items ul li div{
+    background-color:rgb(255, 59, 0) ;
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 3px;
+}
+#landing_page .container nav .nav_items ul li a:hover {
+    color: rgb(255, 59, 0);
+}
+#landing_page .landing_page_items{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#landing_page .landing_page_items .col_left h1{
+    font-size: 5rem;
+}
+#landing_page .landing_page_items .col_left .name_bar{
+    width: 70px;
+    height: 5px;
+    background-color: rgb(255, 59, 0);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+#landing_page .landing_page_items .col_left .landing_page_links{
+    display: flex;
+}
+#landing_page .landing_page_items .col_left .landing_page_links a{
+    margin-right: 2rem;
+    margin-top: 5rem;
+    opacity: 0;
+}
+#landing_page .landing_page_items .col_left .landing_page_links a i{
+    font-size: 20px;
+    transition: 0.4s;
+}
+#landing_page .landing_page_items .col_left .landing_page_links a i:hover{
+    color: rgb(255, 59, 0);
+}
+#landing_page .landing_page_items .col_right {
+    text-align: center;
+    overflow: hidden;
+}
+#landing_page .landing_page_items .col_right h6{
+    color: #666;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 1rem 10px;
+    opacity: 0;
+}
+#landing_page .landing_page_items .col_right h1{
+    font-size: 2.1rem;
+    opacity:0;
+}
+#landing_page .landing_page_items .col_right h1 span{
+    color: rgb(255, 59, 0);
+}
+#landing_page .landing_page_items .col_right p{
+    color: #666;
+    margin: 2rem 0;
+    line-height: 25px;
+    font-weight: 600;
+    word-spacing: 3px;
+    opacity: 0;
+}
+#landing_page .landing_page_items .col_right a{
+    font-size: 1.2rem;
+    color:rgb(255, 59, 0) ;
+    text-decoration: underline;
+    opacity: 0;
+}
+#landing_page .landing_page_items .col_right a i{
+    font-size: 15px;
+    color: rgb(255, 59, 0);
+    margin-left: 2rem;
+}
+#landing_page .landing_page_items .col_right a i.fa-arrow-circle-down{
+    display: none;
+}
+/* Contact Page */
+#contact{
+    background-color: rgb(43, 42, 42);
+    max-width: 100%;
+    height: 100vh;
+}
+#contact .container{
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .container .col_left h6{
+    color: #888;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#contact .container .col_left .contact_bar{
+    width: 70px;
+    height: 1px;
+    background-color: rgb(255, 59, 0);
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+#contact .container .col_left h1{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+}
+#contact .container .col_left p{
+    color: #888;
+    font-size: 1rem;
+    padding-right:3rem;
+    margin-bottom: 3rem;
+}
+#contact .container .col_left a{
+    color: rgb(255, 59, 0);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+#contact .container .col_left a:hover{
+    color: #f4f4f4;
+}
+#contact .container .col_left .fa-arrow-right{
+    margin-left: 1rem;
+    color: rgb(255, 59, 0);
+    transition: 0.4s;
+}
+#contact .container .col_left .fa-arrow-circle-down{
+    display: none;
+}
+#contact .container .col_right h1{
+    font-size: 1.5rem;
+    word-spacing: 3px;
+}
+#contact .container .col_right p{
+    color: #777;
+    margin: 2rem 0;
+}
+#contact .container .col_right div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact .container .col_right div h1{
+    color: rgb(0, 161, 255);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+#contact .container .col_right div h3{
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+#contact .container .col_left h1 span,
+#contact .container .col_right h1 span{
+    color: rgb(255, 59, 0);
+}
+/* Work Top */
+#work_top{
+    margin: auto;
+    width: 1200px;
+    margin-top: -190px;
+    position: relative;
+    z-index: 1;
+}
+#work_top .box1{
+    background-color: #333;
+    padding: 1rem 2rem;
+    float: left;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid rgba(85, 84, 84, 0.226);
+}
+#work_top .box_mid{
+    margin: 0 7rem;
+}
+#work_top .box1 i{
+    color: rgb(0, 161, 255);
+    font-size: 1.5rem;
+}
+#work_top .box1 i:nth-child(1){
+    font-size: 4rem;
+}
+#work_top div div{
+    text-align: left;
+}
+#work_top .box1 h1{
+    font-size: 1.2rem;
+    color: #f2f2f2;
+}
+#work_top .box1 p{
+    color: grey;
+    margin-top: 5px;
+    font-weight: bold;
+}
+/* portfolio section start */
+#portfolio{
+    background-color: #222;
+}
+#portfolio .container{
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+}
+@media screen and (max-width: 576px){
+    /* Landing Page */
+    #landing_page .container{
+        padding: 2rem;
+    }
+    #landing_page .container nav{
+        height: 50px;
+    }
+    #landing_page .container nav .logo{
+        font-size: 1.3rem;
+    }
+    #landing_page .container nav .nav_items{
+        display: none;
+    }
+    #landing_page .landing_page_items{
+        display: inline-flexbox;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        height: auto;
+    }
+    #landing_page .landing_page_items .col_left{
+        padding: 1rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #landing_page .landing_page_items .col_left h1{
+        font-size: 3rem;
+
+    }
+    #landing_page .landing_page_items .col_left .landing_page_links{
+        margin-left: 2rem;
+    }
+    #landing_page .landing_page_items .col_left .landing_page_links a{
+        margin-top: 2rem;
+    }
+
+    #landing_page .landing_page_items .col_right {
+        text-align: center;
+        overflow: hidden;
+    }
+    #landing_page .landing_page_items .col_right h4{
+        color: grey;
+        margin: 0.5rem 0;
+    }
+    #landing_page .landing_page_items .col_right h1{
+        font-size: 2.5rem;
+    }
+    #landing_page .landing_page_items .col_left .name_bar{
+        margin:10px auto;
+    }
+
+    #landing_page .landing_page_items .col_right p{
+        font-weight: normal;
+        line-height: normal;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    #landing_page .landing_page_items .col_right a{
+        display: block;
+        margin-top: -15px;
+        text-decoration: none;
+    }
+    #landing_page .landing_page_items .col_right a i.fa-arrow-right{
+        display: none;
+    }
+    #landing_page .landing_page_items .col_right a i.fa-arrow-circle-down{
+        display: block;
+        margin: 10px auto;
+        text-decoration: none;
+    }
+
+    /* Contact Page */
+    #contact .container{
+        display:inline-flexbox;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        height: 100vh;
+    }
+    #contact .container .col_left,
+    #contact .container .col_right{
+        padding: 0 3rem 0.8rem 3rem;
+    }
+    #contact .container .col_right{
+        padding: 0 5rem;
+    }
+    #contact .container .col_left .contact_bar{
+        margin: auto;
+    }
+    #contact .container .col_left h4{
+        color: grey;
+    }
+    #contact .container .col_left h1,
+    #contact .container .col_right h1{
+        font-size:1.5rem;
+    }
+    #contact .container .col_left p{
+        margin-left: 50px;
+    }
+    #contact .container .col_left p{
+        margin-bottom: 1rem;
+    }
+    #contact .container .col_left p,
+    #contact .container .col_right p{
+        font-size:1rem ;
+    }
+    #contact .container .col_left a i.fa-arrow-right{
+        display: none;
+    }
+    #contact .container .col_left a{
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    #contact .container .col_left a i.fa-arrow-circle-down{
+        display: block;
+        margin-top: 10px;
+        color: rgb(255, 59, 0);
+    }
+    #contact .container .col_right div h1{
+        font-size: 1.5rem;
+    }
+    #contact .container .col_right div h3{
+        font-size: 0.8rem;
+    }
+    /* Work Top */
+    #work_top{
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    }
+    #work_top .box1{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    #work_top .box1 i{
+        font-size: 3.5rem;
+    }
+    #work_top .box_mid{
+        margin: 0;
+    }
+    #work_top .box1 div{
+        text-align: center;
+    }
+    #work_top .box1 div h1{
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width: 350px){
+    /* Landing Page */
+    #landing_page .landing_page_items .col_left h1{
+        font-size: 1.5rem;
+    }
+    #landing_page .landing_page_items .col_right h1{
+        font-size: 1.1rem;
+    }
+    #landing_page .landing_page_items .col_right p{
+        font-size: 0.7rem;
+    }
+    #landing_page .landing_page_items .col_right a{
+        font-size: 0.9rem;
+    }
+    /* contact Page */
+    #contact .container .col_left h1,
+    #contact .container .col_right h1{
+        font-size: 0.9rem;
+    }
+    #contact .container .col_right div h1{
+        font-size: 1rem;
+    }
+    #contact .container .col_right div h3{
+        font-size: 0.8rem;
+    }
+}
