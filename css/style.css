@@ -307,7 +307,7 @@ a{
     }
 
     #landing_page .landing_page_items .col_left h1{
-        font-size: 3rem;
+        font-size: 2rem;
 
     }
     #landing_page .landing_page_items .col_left .landing_page_links{
@@ -326,7 +326,7 @@ a{
         margin: 0.5rem 0;
     }
     #landing_page .landing_page_items .col_right h1{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     #landing_page .landing_page_items .col_left .name_bar{
         margin:10px auto;
