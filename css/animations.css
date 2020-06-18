@@ -2,7 +2,7 @@
     /* Landing Page */
 
     #landing_page .landing_page_items .col_left .name_bar,
-    #contact .container .col_left .contact_bar{
+    #aboutme .name_bar{
         animation: namebar_moving 1.5s ease-in-out infinite;
     }
     #landing_page .landing_page_items .col_right a i.fa-arrow-circle-down,
@@ -10,11 +10,17 @@
     #contact .container .col_left a i.fa-arrow-circle-down{
         animation:arrow_down 0.8s ease infinite;
     }
-    #landing_page .container .moving{
+    #landing_page .container .moving,
+    #aboutme .moving{
         animation: moving 2s linear infinite;
     }
-    #landing_page .container .moving1{
+    #landing_page .container .moving1,
+    #aboutme .moving1{
         animation: moving1 5s linear infinite;
+    }
+    #landing_page .container .moving2{
+        animation: moving2 6s linear infinite;
+        animation-delay: 0.5s;
     }
     #landing_page .landing_page_items .col_left{
         animation: left_content 0.5s ease-in forwards;
@@ -62,7 +68,7 @@
             width: 5px;
         }
         50%{
-            width: 150px;
+            width: 80px;
         }
         100%{
             width: 5px ;
@@ -100,10 +106,11 @@
             left: 50%;
         }
         100%{
-            top: 110%;
-            left: 110%;
+            top: 100%;
+            left: 100%;
         }
     }
+
     @keyframes updown_bar{
         0%{
             width: 0;
@@ -169,18 +176,18 @@
     }
     @keyframes typer{
         0%{
-            content: "A Coder";
+            content: "A Coder.";
         }
         45%{
-            content: "An Ai Model Builder";
+            content: "An Ai Model Builder.";
             color:rgb(0, 161, 255);
         }
 
         75%{
-            content: "A Python Developer";
+            content: "A Python Developer.";
         }
         100%{
-            content: "A Coder";
+            content: "A Coder.";
         }
 
     }

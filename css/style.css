@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
     color: #fff;
-    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -14,59 +13,68 @@ a{
     max-width: 100%;
     height: 100vh;
     background-color: #222222;
+    position: relative;
+    overflow: hidden;
 }
 #landing_page .container{
     max-width: 1200px;
     height: 100vh;
     margin: auto;
     overflow: hidden;
-    position: relative;
 }
-#landing_page .container .moving{
+#landing_page .container .moving,
+#aboutme .moving{
     position: absolute;
     z-index: 9;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.055);
+    background-color: rgba(255, 255, 255, 0.050);
 }
-#landing_page .container .moving1{
+#landing_page .container .moving1,
+#aboutme .moving1{
     position: absolute;
     z-index: 9;
     width: 100px;
     height: 3px;
-    transform: rotate(240deg);
+    transform: rotate(210deg);
     background-color: rgba(255, 255, 255, 0.116);
 }
-#landing_page .container .moving1:nth-child(2){
-    transform: rotate(60deg);
-}
-#landing_page .container .moving:nth-child(1){
+
+
+#landing_page .container .moving:nth-child(1),
+#aboutme .moving:nth-child(1){
     width: 10px;
     height: 10px;
     top: 27%;
     left: 19%;
     background-color: rgba(0, 162, 255, 0.144);
 }
-#landing_page .container .moving:nth-child(2){
+#landing_page .container .moving:nth-child(2),
+#aboutme .moving:nth-child(2){
     width: 10px;
     height: 10px;
     top: 60%;
     left: 55%;
     animation-delay: 1s;
+    background-color: rgba(255, 60, 0, 0.144);
 }
-#landing_page .container .moving:nth-child(3){
+#landing_page .container .moving:nth-child(3),
+#aboutme .moving:nth-child(3){
     width: 10px;
     height: 10px;
     bottom: 17%;
     left: 25%;
 }
-#landing_page .container .moving:nth-child(4){
+#landing_page .container .moving:nth-child(4),
+#aboutme .moving:nth-child(4){
     width: 10px;
     height: 10px;
     top: 10%;
     left: 28%;
     animation-delay: 0.3s;
+    background-color: rgba(255, 60, 0, 0.144);
 }
-#landing_page .container .moving:nth-child(5){
+#landing_page .container .moving:nth-child(5),
+#aboutme .moving:nth-child(5){
     width: 6px;
     height: 6px;
     right: 7%;
@@ -74,39 +82,48 @@ a{
     animation-delay: 0.8s;
     background-color: rgba(0, 162, 255, 0.144);
 }
-#landing_page .container .moving:nth-child(6){
+#landing_page .container .moving:nth-child(6),
+#aboutme .moving:nth-child(6){
     width: 5px;
     height: 5px;
     top: 45%;
     left: 35%;
     animation-delay: 1.2s;
+    background-color: rgba(255, 60, 0, 0.144);
 }
-#landing_page .container .moving:nth-child(7){
+#landing_page .container .moving:nth-child(7),
+#aboutme .moving:nth-child(7){
     width: 8px;
     height: 8px;
     top: 95%;
     left: 54%;
     background-color: rgba(0, 162, 255, 0.144);
 }
-#landing_page .container .moving:nth-child(8){
+#landing_page .container .moving:nth-child(8),
+#aboutme .moving:nth-child(8){
     width: 10px;
     height: 10px;
     top: 40%;
     left: 45%;
+    background-color: rgba(255, 60, 0, 0.144);
 }
-#landing_page .container .moving:nth-child(9){
+#landing_page .container .moving:nth-child(9),
+#aboutme .moving:nth-child(9){
     width: 100px;
     height: 2px;
     top: 47%;
     left:40%;
     animation-delay: 1.4s;
+    background-color: (0, 162, 255, 0.144);
 }
-#landing_page .container .moving:nth-child(10){
+#landing_page .container .moving:nth-child(10),
+#aboutme .moving:nth-child(10){
     width: 100px;
     height: 2px;
     top: 7%;
     left: 5%;
     transform: rotate(90deg);
+    
 }
 #landing_page .container nav{
     max-width: 100%;
@@ -207,7 +224,8 @@ a{
 #landing_page .landing_page_items .col_left h3 span{
     color: rgb(255, 59, 0);
 }
-#landing_page .landing_page_items .col_left .name_bar{
+#landing_page .landing_page_items .col_left .name_bar,
+#aboutme .name_bar{
     width: 70px;
     height: 5px;
     background-color: rgb(255, 59, 0);
@@ -230,16 +248,15 @@ a{
 }
 #landing_page .landing_page_items .col_left .landing_page_links .link2{
     overflow: hidden;
-    height: 100px;
 }
 #landing_page .landing_page_items .col_left .landing_page_links .link2 a{
     margin-top:2rem;
     font-size: 1rem;
     opacity: 0;
-    overflow-y: hidden;
 }
 #landing_page .landing_page_items .col_left .landing_page_links a.mystory{
     display: block;
+    height: 120px;
 }
 #landing_page .landing_page_items .col_left .landing_page_links a i{
     font-size: 20px;
@@ -254,19 +271,141 @@ a{
     margin-top: 1rem;
     color: rgb(255, 59, 0);
 }
-/* About me */
+
+
+
+
+/* #About me */
 #aboutme{
-    background-color: #333;
+    background-color: #222222;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
+#aboutme h4{
+    padding: 2.5rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(0, 162, 255, 0.575);
+}
+#aboutme .name_bar{
+    height: 2px;
+}
+#aboutme .moving1{
+    transform: rotate(210deg);
+}
+
+#aboutme .about_page_item{
+    max-width: 1200px;
+    height: 90vh;
+    margin: auto;
+    text-align: left;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#aboutme .about_page_item .col_left h1{
+    font-size: 2rem;
+    color: #f9f9f9;
+    letter-spacing: 2px;
+    color: rgb(255, 59, 0);
+}
+
+#aboutme .about_page_item .col_left p{
+    font-size: 1rem;
+    word-spacing: 3px;
+    margin: 1rem 0 2rem 0;
+    color:rgb(90, 90, 90);
+    font-weight: 600;
+}
+#aboutme .about_page_item .col_left .col2{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+#aboutme .about_page_item .col_left .col2 h5{
+    font-size: 1rem;
+    color: rgb(182, 179, 179);
+}
+#aboutme .about_page_item .col_left .col2 h5:nth-child(2){
+    margin: 0.5rem 0;
+}
+#aboutme .about_page_item .col_left .col2 h5 i{
+    margin-right: 1rem;
+    color: rgb(0, 161, 255);
+}
+#aboutme .about_page_item .col_left button{
+    padding: 0.3rem 1rem;
+    margin-top: 3rem;
+    background-color: transparent;
+    outline: transparent;
+    color: rgb(255, 59, 0);
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid rgb(255, 59, 0);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+#aboutme .about_page_item .col_left button:hover{
+    border: 2px solid rgba(0, 162, 255, 0.575);
+    color: #fff;
+}
+#aboutme .about_page_item .col_right img{
+    width: 270px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+#aboutme .about_page_item .col_right h5{
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    /* border-bottom: 1px solid grey; */
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: rgb(182, 179, 179);
+}
+#aboutme .about_page_item .col_right h5 span{
+    color: rgb(92, 92, 92);
+    margin-right: 2rem;
+    font-weight: 600;
+}
+#aboutme .moving{
+    position: absolute;
+    z-index: 9;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.015);
+}
+#aboutme .moving:nth-child(1){
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.150);
+}
+
+
+
+
+
+
 @media screen and (min-width: 576px){
     #landing_page .container{
         padding: 4rem;
     }
+    #aboutme .about_page_item .col_right img{
+        width: 186px;
+        height: 180px;
+        margin-left: 20%;
+    }
+
 }
 @media screen and (max-width: 576px){
     /* Landing Page */
     #landing_page .container{
         padding: 1rem 3rem;
+    }
+    #landing_page .container .moving1{
+        transform: rotate(230deg);
     }
     #landing_page .container nav .left_nav{
         width: 100%;
@@ -295,10 +434,6 @@ a{
     #landing_page .container nav .nav_items a{
         display: inline;
         font-size: 1rem;
-        display: block;
-        margin-top: 2rem;
-    }
-    #landing_page .container nav input:checked + #drop_down{
         display: block;
     }
 
@@ -349,13 +484,68 @@ a{
         margin: 10px auto;
         text-decoration: none;
     }
+
+
+    /* About me */
+    #aboutme{
+        padding: 2rem 2rem ;
+    }
+    #aboutme h4{
+        font-size: 1rem;
+    }
+    #aboutme .moving1{
+        transform: rotate(250deg);
+    }
+    #aboutme .about_page_item{
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+    #aboutme .about_page_item .col_left{
+        margin-top: 4rem;
+    }
+    #aboutme .about_page_item .col_left h1{
+        font-size: 1rem;
+    }
+    #aboutme .about_page_item .col_left p{
+        font-size: 1rem;
+    }
+    #aboutme .about_page_item .col_left .col2{
+        flex-direction: column;
+    }
+    #aboutme .about_page_item .col_left .col2 h5{
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+    #aboutme .about_page_item .col_left .col2 h5 i{
+        font-size: 0.7rem;
+    }
+
+    #aboutme .about_page_item .col_right img{
+        height: 200px;
+        width: 209px;
+        margin: 2rem 0;
+    }
+    #aboutme .about_page_item .col_right h5{
+        font-size: 0.7rem;
+        margin-bottom: 1.5rem;
+    }
+    #aboutme .about_page_item .col_right h5 span{
+        margin-right: 5px;
+    }
 }
 
 @media screen and (max-width: 350px){
+    /* Landing Page */
     #landing_page .landing_page_items .col_left h1{
         font-size: 2.5rem;
     }
     #landing_page .landing_page_items .col_left .landing_page_links .link1{
         margin: 1rem;
+    }
+    /* about page */
+    #aboutme h4{
+        font-size: 1rem;
     }
 }
