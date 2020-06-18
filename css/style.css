@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
     color: #fff;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
