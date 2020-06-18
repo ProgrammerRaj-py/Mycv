@@ -236,6 +236,7 @@ a{
     margin-top:2rem;
     font-size: 1rem;
     opacity: 0;
+    overflow-y: hidden;
 }
 #landing_page .landing_page_items .col_left .landing_page_links a.mystory{
     display: block;
