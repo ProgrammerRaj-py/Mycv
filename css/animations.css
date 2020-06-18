@@ -6,8 +6,15 @@
         animation: namebar_moving 1.5s ease-in-out infinite;
     }
     #landing_page .landing_page_items .col_right a i.fa-arrow-circle-down,
+    #landing_page .landing_page_items .col_left a i.fa-arrow-circle-down,
     #contact .container .col_left a i.fa-arrow-circle-down{
         animation:arrow_down 0.8s ease infinite;
+    }
+    #landing_page .container .moving{
+        animation: moving 2s linear infinite;
+    }
+    #landing_page .container .moving1{
+        animation: moving1 5s linear infinite;
     }
     #landing_page .landing_page_items .col_left{
         animation: left_content 0.5s ease-in forwards;
@@ -36,18 +43,29 @@
     #landing_page .container nav .logo .bars .bar_mid{
         animation: updown_bar_mid 1.5s linear infinite;
     }
+    .typer::after{
+        content: "";
+        animation: typer 5s ease-in infinite;
+        color: rgb(255, 59, 0);
+    }
+    .show_drop{
+        animation: drop_down 0.5s ease forwards;
+    }
+    .hide_drop{
+        animation: hide_down 0.5s ease forwards;
+    }
 
 
     /* keyfreams landing page */
     @keyframes namebar_moving {
         0%{
-            width: 10px;
+            width: 5px;
         }
         50%{
-            width: 100px;
+            width: 150px;
         }
         100%{
-            width: 10px ;
+            width: 5px ;
         }
     }
     @keyframes arrow_down{
@@ -59,6 +77,31 @@
         }
         100%{
             transform: translateY(-5px);
+        }
+    }
+    @keyframes  moving{
+        0%{
+            transform: scale(0);
+        }
+        50%{
+            transform: scale(3);
+        }
+        100%{
+            transform: scale(0);
+        }
+    }
+    @keyframes  moving1{
+        0%{
+            top: 0%;
+            left: -10%;
+        }
+        50%{
+            top: 50%;
+            left: 50%;
+        }
+        100%{
+            top: 110%;
+            left: 110%;
         }
     }
     @keyframes updown_bar{
@@ -85,7 +128,7 @@
     }
     @keyframes left_content {
         0%{
-            transform: translateX(-90%);
+            transform: translateX(-100%);
         }
         100%{
             opacity: 1;
@@ -122,6 +165,42 @@
         }
         100%{
             opacity: 1;
+        }
+    }
+    @keyframes typer{
+        0%{
+            content: "A Coder";
+        }
+        45%{
+            content: "An Ai Model Builder";
+            color:rgb(0, 161, 255);
+        }
+
+        75%{
+            content: "A Python Developer";
+        }
+        100%{
+            content: "A Coder";
+        }
+
+    }
+    @keyframes drop_down{
+        0%{
+            opacity: 0;
+            transform: scale(4);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes hide_down{
+        0%{
+            opacity: 1;
+            
+        }
+        100%{
+            transform: scale(3);
+            opacity: 0;
         }
     }
 
