@@ -21,7 +21,7 @@ a{
 #education_col1,
 #education_col2,
 #education_col3{
-    opacity: 1;
+    opacity: 0;
     overflow: hidden;
 }
 
