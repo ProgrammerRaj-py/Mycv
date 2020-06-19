@@ -3,7 +3,8 @@
 
     #landing_page .landing_page_items .col_left .name_bar,
     #aboutme .name_bar,
-    #education .name_bar{
+    #education .name_bar,
+    #skills .name_bar{
         animation: namebar_moving 1.5s ease-in-out infinite;
         -webkit-animation:namebar_moving 1.5s ease-in-out infinite ;
         -moz-animation: namebar_moving 1.5s ease-in-out infinite;
@@ -16,12 +17,14 @@
     }
     #landing_page .container .moving,
     #aboutme .moving,
-    #education .moving{
+    #education .moving,
+    #skills .moving{
         animation: moving 2s linear infinite;
     }
     #landing_page .container .moving1,
     #aboutme .moving1,
-    #education .moving1{
+    #education .moving1,
+    #skills .moving1{
         animation: moving1 5s linear infinite;
     }
     #landing_page .container .moving2{
@@ -66,6 +69,10 @@
     .hide_drop{
         animation: hide_down 0.5s ease forwards;
     }
+
+
+
+
     /* Mobile screen */
     @media screen and (max-width: 420px){
         .aboutme_header{
@@ -98,6 +105,30 @@
         }
         .education_col2{
             animation: education_col2 0.6s ease-in-out forwards;
+        }
+
+        /* Skills */
+        .skills_header{
+            animation: skills_header 0.5s ease-in forwards;
+        }
+        .skills_bar_ani .con .one{
+            animation: skillsbarone 1s ease forwards ;
+        }
+        .skills_bar_ani .con .two{
+            animation: skillsbartwo 1s ease forwards ;
+            animation-delay: 0.3s;
+        }
+        .skills_bar_ani .con .three{
+            animation: skillsbarthree 1s ease forwards ;
+            animation-delay: 0.6s;
+        }
+        .skills_bar_ani .con .four{
+            animation: skillsbarfour 1s ease forwards ;
+            animation-delay: 1s;
+        }
+        .skills_bar_ani .con .five{
+            animation: skillsbarfive 1s ease forwards ;
+            animation-delay: 1.3s;
         }
     }
 
@@ -320,6 +351,63 @@
         }
         100%{
             opacity: 1;
+        }
+    }
+    @keyframes skills_header{
+        0%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    @keyframes skillsbar{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes skillsbarone{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 90%;
+        }
+    }
+    @keyframes skillsbartwo{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 70%;
+        }
+    }
+    @keyframes skillsbarthree{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 80%;
+        }
+    }
+    @keyframes skillsbarfour{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    @keyframes skillsbarfive{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 50%;
         }
     }
 

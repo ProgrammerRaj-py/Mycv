@@ -27,9 +27,21 @@ const education_col1 = document.getElementById("education_col1")
 const education_col2 = document.getElementById("education_col2")
 const education_col3 = document.getElementById("education_col3")
 
+
+//Skills Section
+const skills_header = document.getElementById("skills_header")
+const skills_bar_ani = document.getElementById("skills_bar_ani")
+
+
 window.addEventListener("scroll",function(){
     var scrolling_px = window.scrollY;
-
+    //Skills Section  
+    if (scrolling_px >= 3100){
+        skills_bar_ani.classList.add("skills_bar_ani")
+    }
+    if (scrolling_px >= 3000){
+        skills_header.classList.add("skills_header")
+    }  
     //Education Section
     if (scrolling_px >= 2600){
         education_col3.classList.add("education_col3")

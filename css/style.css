@@ -20,8 +20,9 @@ a{
 #education_header,
 #education_col1,
 #education_col2,
-#education_col3{
-    opacity: 1;
+#education_col3,
+#skills_header{
+    opacity: 0;
     overflow: hidden;
 }
 
@@ -40,7 +41,8 @@ a{
 }
 #landing_page .container .moving,
 #aboutme .moving,
-#education .moving{
+#education .moving,
+#skills .moving{
     position: absolute;
     z-index: 9;
     border-radius: 50%;
@@ -48,7 +50,8 @@ a{
 }
 #landing_page .container .moving1,
 #aboutme .moving1,
-#education .moving1{
+#education .moving1,
+#skills .moving1{
     position: absolute;
     z-index: 9;
     width: 100px;
@@ -60,7 +63,8 @@ a{
 
 #landing_page .container .moving:nth-child(1),
 #aboutme .moving:nth-child(1),
-#education .moving:nth-child(1){
+#education .moving:nth-child(1),
+#skills .moving:nth-child(1){
     width: 10px;
     height: 10px;
     top: 27%;
@@ -69,7 +73,8 @@ a{
 }
 #landing_page .container .moving:nth-child(2),
 #aboutme .moving:nth-child(2),
-#education .moving:nth-child(2){
+#education .moving:nth-child(2),
+#skills .moving:nth-child(2){
     width: 10px;
     height: 10px;
     top: 60%;
@@ -79,7 +84,8 @@ a{
 }
 #landing_page .container .moving:nth-child(3),
 #aboutme .moving:nth-child(3),
-#education .moving:nth-child(3){
+#education .moving:nth-child(3),
+#skills .moving:nth-child(3){
     width: 10px;
     height: 10px;
     bottom: 17%;
@@ -87,7 +93,8 @@ a{
 }
 #landing_page .container .moving:nth-child(4),
 #aboutme .moving:nth-child(4),
-#education .moving:nth-child(4){
+#education .moving:nth-child(4),
+#skills .moving:nth-child(4){
     width: 10px;
     height: 10px;
     top: 10%;
@@ -97,7 +104,8 @@ a{
 }
 #landing_page .container .moving:nth-child(5),
 #aboutme .moving:nth-child(5),
-#education .moving:nth-child(5){
+#education .moving:nth-child(5),
+#skills .moving:nth-child(5){
     width: 6px;
     height: 6px;
     right: 7%;
@@ -107,7 +115,8 @@ a{
 }
 #landing_page .container .moving:nth-child(6),
 #aboutme .moving:nth-child(6),
-#education .moving:nth-child(6){
+#education .moving:nth-child(6),
+#skills .moving:nth-child(6){
     width: 5px;
     height: 5px;
     top: 45%;
@@ -117,7 +126,8 @@ a{
 }
 #landing_page .container .moving:nth-child(7),
 #aboutme .moving:nth-child(7),
-#education .moving:nth-child(7){
+#education .moving:nth-child(7),
+#skills .moving:nth-child(7){
     width: 8px;
     height: 8px;
     top: 95%;
@@ -126,7 +136,8 @@ a{
 }
 #landing_page .container .moving:nth-child(8),
 #aboutme .moving:nth-child(8),
-#education .moving:nth-child(8){
+#education .moving:nth-child(8),
+#skills .moving:nth-child(8){
     width: 10px;
     height: 10px;
     top: 40%;
@@ -135,7 +146,8 @@ a{
 }
 #landing_page .container .moving:nth-child(9),
 #aboutme .moving:nth-child(9),
-#education .moving:nth-child(9){
+#education .moving:nth-child(9),
+#skills .moving:nth-child(9){
     width: 100px;
     height: 2px;
     top: 47%;
@@ -145,7 +157,8 @@ a{
 }
 #landing_page .container .moving:nth-child(10),
 #aboutme .moving:nth-child(10),
-#education .moving:nth-child(10){
+#education .moving:nth-child(10),
+#skills .moving:nth-child(10){
     width: 100px;
     height: 2px;
     top: 7%;
@@ -254,7 +267,8 @@ a{
 }
 #landing_page .landing_page_items .col_left .name_bar,
 #aboutme .name_bar,
-#education .name_bar{
+#education .name_bar,
+#skills .name_bar{
     width: 70px;
     height: 5px;
     background-color: rgb(255, 59, 0);
@@ -311,13 +325,15 @@ a{
     position: relative;
     overflow: hidden;
 }
-#aboutme h4{
+#aboutme h4,
+#skills h4{
     padding: 2.5rem 0 0.5rem 0;
     text-align: center;
     font-size: 1.5rem;
     color: rgba(0, 162, 255, 0.575);
 }
-#aboutme .name_bar{
+#aboutme .name_bar,
+#skills .name_bar{
     height: 2px;
 }
 #aboutme .moving1{
@@ -450,8 +466,6 @@ a{
     transform: rotate(90deg);
     top: 49%;
     left: 23%;
-    display: flex;
-    jus
 }
 #education .education_item .col1,
 #education .education_item .col3{
@@ -515,6 +529,84 @@ a{
 }
 #education .education_item .col2 .circle{
     margin-right: 2.5rem;
+}
+
+/* Skills */
+#skills{
+    background-color: #222222;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 0;
+}
+#skills .skills_items{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+#skills .skills_items div{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 3rem;
+    background-color: rgb(54, 53, 53);
+    border-radius: 5rem;
+    position: relative;
+}
+#skills .skills_items div .one_div{
+    position: absolute;
+    height: 100%;
+    background-color: rgba(255, 60, 0, 0.801);
+}
+
+#skills .skills_items div.con::after{
+    content: "";
+    position: absolute;
+    top: -130%;
+    left: 2%;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#skills .skills_items div.con::before{
+    content: "";
+    position: absolute;
+    top: -130%;
+    right: 2% ;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#skills .skills_items div.con1::after{
+    content: "HTML";
+}
+#skills .skills_items div.con1::before{
+    content: "90%";
+}
+#skills .skills_items div.con2::after{
+    content: "CSS";
+}
+#skills .skills_items div.con2::before{
+    content: "70%";
+}
+#skills .skills_items div.con3::after{
+    content: "JavaScript";
+}
+#skills .skills_items div.con3::before{
+    content: "80%";
+}
+#skills .skills_items div.con4::after{
+    content: "Python";
+}
+#skills .skills_items div.con4::before{
+    content: "60%";
+}
+#skills .skills_items div.con5::after{
+    content: "Machine Learning";
+}
+#skills .skills_items div.con5::before{
+    content: "50%";
+}
+#skills .skills_items div .one_div{
+    width: 0;
 }
 
 
@@ -723,6 +815,21 @@ a{
     #education .education_item .col3 .circle{
         margin-left: 2rem;
     }
+
+
+    /* Skills */
+    #skills{
+        padding: 3rem;
+    }
+    #skills .skills_items div{
+        height: 0.7rem;
+    }
+    #skills .skills_items div.con::after,
+    #skills .skills_items div.con::before{
+        top: -200%;
+        font-size: 0.75rem;
+    }
+
 }
 
 @media screen and (max-width: 350px){
