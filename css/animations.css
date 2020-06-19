@@ -194,7 +194,7 @@
         }
     }
 
-    @media (min-width: 769px){
+    @media (min-width: 769px) and (max-width:810px){
         /* AboutMe */
         .aboutme_header2{
             animation: aboutme_header 0.5s ease forwards;
