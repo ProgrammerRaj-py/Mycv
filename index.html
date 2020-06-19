@@ -9,18 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="icon" type="icon" sizes="16x16" href="./images/favicon.ico">
 	<script src="https://kit.fontawesome.com/ecde44bb11.js" crossorigin="anonymous"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169954226-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-169954226-1');
-</script>
-
 </head>
 <body>
+    <!-- Landing Page Section -->
     <section id="landing_page">
         <div class="container">
             <span class="moving"></span>
@@ -62,13 +53,15 @@
                         <a href="https://github.com/ProgrammerRaj-py"><i class="fa fa-github"></i></a>
                         </div>
                         <div class="link2">
-                            <a class="mystory" href="#">My story</i><i class="fa fa-arrow-circle-down"></i></a>
+                            <a class="mystory" href="">My story</i><i class="fa fa-arrow-circle-down"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- About Me Section -->
     <section id="aboutme">
         <span class="moving"></span>
         <span class="moving"></span>
@@ -81,15 +74,19 @@
         <span class="moving"></span>
         <span class="moving"></span>
         <span class="moving1"></span>
-        <h4>- About Me -</h4>
+        <h4 id="aboutme_header">- About Me -</h4>
         <div class="name_bar"></div>
         <div class="about_page_item">
             <div class="col_left">
-                <h1>Objective</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Laboriosam incidunt, officiis  veritatis quasi est beatae quae<br> excepturi, nisi, maiores voluptatum iste?  Perspiciatis fugiat, illum <br> dolores maiores ad in sapiente impedit?</p>
-                <h1>What I Do ?</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Architecto eaque  explicabo atque ut debitis hic <br> nobis deserunt delectus! Impedit, aut?</p>
-                <div class="col2">
+                <div id="aboutme_obj">
+                    <h1>Objective</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Laboriosam incidunt, officiis  veritatis quasi est beatae quae<br> excepturi, nisi, maiores voluptatum iste?  Perspiciatis fugiat, illum <br> dolores maiores ad in sapiente impedit?</p>
+                </div>
+                <div id="aboutme_what">
+                    <h1>What I Do ?</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Architecto eaque  explicabo atque ut debitis hic <br> nobis deserunt delectus! Impedit, aut?</p>
+                </div>
+                <div class="col2" id="aboutme_iknow">
                     <div class="col_left1">
                         <h5><i class="fa fa-check"></i>Python Programing</h5>
                         <h5><i class="fa fa-check"></i>Machine Learning</h5>
@@ -101,17 +98,70 @@
                         <h5><i class="fa fa-check"></i>Ploting</h5>
                     </div>
                 </div>
-                <button>Message Me</button>
+                <button id="aboutme_btn">Message Me</button>
             </div>
             <div class="col_right">
-                <img src="./images/own.jpg" alt="Own Img">
-                <div>
+                <img id="aboutme_img" src="./images/own4.png" alt="Own Img">
+                <div id="aboutme_names">
                 <h5><span>Name:</span> Raj Mazumder</h5>
                 <h5><span>Date of Birth:</span> 27 Aug 2001</h5>
                 <h5><span>Address:</span> Katwa,India</h5>
                 <h5><span>Nationality:</span> Indian</h5>
                 <h5><span>Email:</span> rajmajumdar182@gmail.com</h5>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving"></span>
+        <span class="moving1"></span>
+        <h4 id="education_header">- Education -</h4>
+        <div class="name_bar"></div>
+        <div class="education_item">
+            <div class="line"></div>
+            <div class="col1" id="education_col1">
+                <div>
+                    <p>Lovely Professional <br> University</p>
+                    <h1>MCA</h1>
+                    <p>Lorem ipsum, dolor sit amet<br> consectetur  adipisicing elit. <br> Tempore rem amet, dolore et nam <br> dignissimos.</p>
+                </div>
+                <div class="circle">
+                    <span>2023<br>to<br>2025</span>
+                </div>
+                <div class="blank"></div>
+            </div>
+            <div class="col2" id="education_col2">
+                <div class="blank"></div>
+                <div class="circle">
+                    <span>2020<br>to<br>2023</span>
+                </div>
+                <div>
+                    <p>Lovely Professional <br> University</p>
+                    <h1>BCA</h1>
+                    <p>Lorem ipsum, dolor sit amet<br> consectetur  adipisicing elit. <br> Tempore rem amet, dolore et nam <br> dignissimos.</p>
+                </div>
+            </div>
+            <div class="col3" id="education_col3">
+                <div>
+                    <p>Sri<br>Ramkrishna<br>Vidyapith</p>
+                    <h1>High School Degree</h1>
+                    <p>Lorem ipsum, dolor sit amet<br> consectetur  adipisicing elit. <br> Tempore rem amet, dolore et nam <br> dignissimos.</p>
+                </div>
+                <div class="circle">
+                    <span>2018<br>to<br>2020</span>
+                </div>
+                <div class="blank"></div>
             </div>
         </div>
     </section>

@@ -4,9 +4,25 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
     color: #fff;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
 }
 a{
     text-decoration: none;
+}
+#aboutme_names,
+#aboutme h4,
+#aboutme_img,
+#aboutme_obj,
+#aboutme_what,
+#aboutme_iknow,
+#aboutme_btn,
+#education_header,
+#education_col1,
+#education_col2,
+#education_col3{
+    opacity: 1;
+    overflow: hidden;
 }
 
 #landing_page{
@@ -23,14 +39,16 @@ a{
     overflow: hidden;
 }
 #landing_page .container .moving,
-#aboutme .moving{
+#aboutme .moving,
+#education .moving{
     position: absolute;
     z-index: 9;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.050);
 }
 #landing_page .container .moving1,
-#aboutme .moving1{
+#aboutme .moving1,
+#education .moving1{
     position: absolute;
     z-index: 9;
     width: 100px;
@@ -41,7 +59,8 @@ a{
 
 
 #landing_page .container .moving:nth-child(1),
-#aboutme .moving:nth-child(1){
+#aboutme .moving:nth-child(1),
+#education .moving:nth-child(1){
     width: 10px;
     height: 10px;
     top: 27%;
@@ -49,7 +68,8 @@ a{
     background-color: rgba(0, 162, 255, 0.144);
 }
 #landing_page .container .moving:nth-child(2),
-#aboutme .moving:nth-child(2){
+#aboutme .moving:nth-child(2),
+#education .moving:nth-child(2){
     width: 10px;
     height: 10px;
     top: 60%;
@@ -58,14 +78,16 @@ a{
     background-color: rgba(255, 60, 0, 0.144);
 }
 #landing_page .container .moving:nth-child(3),
-#aboutme .moving:nth-child(3){
+#aboutme .moving:nth-child(3),
+#education .moving:nth-child(3){
     width: 10px;
     height: 10px;
     bottom: 17%;
     left: 25%;
 }
 #landing_page .container .moving:nth-child(4),
-#aboutme .moving:nth-child(4){
+#aboutme .moving:nth-child(4),
+#education .moving:nth-child(4){
     width: 10px;
     height: 10px;
     top: 10%;
@@ -74,7 +96,8 @@ a{
     background-color: rgba(255, 60, 0, 0.144);
 }
 #landing_page .container .moving:nth-child(5),
-#aboutme .moving:nth-child(5){
+#aboutme .moving:nth-child(5),
+#education .moving:nth-child(5){
     width: 6px;
     height: 6px;
     right: 7%;
@@ -83,7 +106,8 @@ a{
     background-color: rgba(0, 162, 255, 0.144);
 }
 #landing_page .container .moving:nth-child(6),
-#aboutme .moving:nth-child(6){
+#aboutme .moving:nth-child(6),
+#education .moving:nth-child(6){
     width: 5px;
     height: 5px;
     top: 45%;
@@ -92,7 +116,8 @@ a{
     background-color: rgba(255, 60, 0, 0.144);
 }
 #landing_page .container .moving:nth-child(7),
-#aboutme .moving:nth-child(7){
+#aboutme .moving:nth-child(7),
+#education .moving:nth-child(7){
     width: 8px;
     height: 8px;
     top: 95%;
@@ -100,7 +125,8 @@ a{
     background-color: rgba(0, 162, 255, 0.144);
 }
 #landing_page .container .moving:nth-child(8),
-#aboutme .moving:nth-child(8){
+#aboutme .moving:nth-child(8),
+#education .moving:nth-child(8){
     width: 10px;
     height: 10px;
     top: 40%;
@@ -108,7 +134,8 @@ a{
     background-color: rgba(255, 60, 0, 0.144);
 }
 #landing_page .container .moving:nth-child(9),
-#aboutme .moving:nth-child(9){
+#aboutme .moving:nth-child(9),
+#education .moving:nth-child(9){
     width: 100px;
     height: 2px;
     top: 47%;
@@ -117,7 +144,8 @@ a{
     background-color: (0, 162, 255, 0.144);
 }
 #landing_page .container .moving:nth-child(10),
-#aboutme .moving:nth-child(10){
+#aboutme .moving:nth-child(10),
+#education .moving:nth-child(10){
     width: 100px;
     height: 2px;
     top: 7%;
@@ -225,7 +253,8 @@ a{
     color: rgb(255, 59, 0);
 }
 #landing_page .landing_page_items .col_left .name_bar,
-#aboutme .name_bar{
+#aboutme .name_bar,
+#education .name_bar{
     width: 70px;
     height: 5px;
     background-color: rgb(255, 59, 0);
@@ -314,10 +343,10 @@ a{
 
 #aboutme .about_page_item .col_left p{
     font-size: 1rem;
+    font-weight: 500;
     word-spacing: 3px;
     margin: 1rem 0 2rem 0;
     color:rgb(90, 90, 90);
-    font-weight: 600;
 }
 #aboutme .about_page_item .col_left .col2{
     display: flex;
@@ -325,7 +354,7 @@ a{
     align-items: left;
 }
 #aboutme .about_page_item .col_left .col2 h5{
-    font-size: 1rem;
+    font-size: 0.9rem !important;
     color: rgb(182, 179, 179);
 }
 #aboutme .about_page_item .col_left .col2 h5:nth-child(2){
@@ -353,10 +382,13 @@ a{
     color: #fff;
 }
 #aboutme .about_page_item .col_right img{
-    width: 270px;
-    height: 250px;
-    border-radius: 50%;
+    width: 250px;
+    height: 260px;
+    padding-top: 1rem;
     margin-bottom: 2rem;
+    border: 5px solid rgba(182, 179, 179, 0.04);
+    border-radius: 20px;
+    /* padding-top: 2rem; */
 }
 #aboutme .about_page_item .col_right h5{
     font-size: 0.9rem;
@@ -386,16 +418,122 @@ a{
 
 
 
+/* Education Section */
+#education{
+    background-color: #222222;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#education h4{
+    padding: 2.5rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(0, 162, 255, 0.575);
+}
+#education .name_bar{
+    height: 2px;
+}
+#education .education_item{
+    max-width:1200px ;
+    margin: 2.5rem auto 0;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#education .education_item .line{
+    background-color: rgb(54, 53, 53);
+    width: 650px;
+    height: 3px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 49%;
+    left: 23%;
+    display: flex;
+    jus
+}
+#education .education_item .col1,
+#education .education_item .col3{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#education .education_item .col1 p,
+#education .education_item .col2 p,
+#education .education_item .col3 p{
+    color:rgb(131, 131, 131) ;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+#education .education_item .col1 p:nth-child(1),
+#education .education_item .col2 p:nth-child(1),
+#education .education_item .col3 p:nth-child(1){
+    font-size: 1.5rem;
+    color: rgba(0, 162, 255, 0.61);
+}
+/* #education .education_item .col1 h1{
+    font-size: 1.5rem;
+} */
+#education .education_item .col1 .circle,
+#education .education_item .col2 .circle,
+#education .education_item .col3 .circle{
+    background-color: rgb(255, 59, 0);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+}
+#education .education_item .col1 .circle span,
+#education .education_item .col2 .circle span,
+#education .education_item .col3 .circle span{
+    font-size: 0.6rem;
+    display: block;
+    text-align: center;
+    line-height: 16px;
+    letter-spacing: 3px;
+    margin-left: 5px;
+    margin-top: 11px;
+    font-weight: 100;
+    color: #f9f9f9;
+}
+#education .education_item .col1 .blank,
+#education .education_item .col2 .blank,
+#education .education_item .col3 .blank{
+    width: 280px;
+}
+
+#education .education_item .col2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0;
+}
+#education .education_item .col2 .circle{
+    margin-right: 2.5rem;
+}
 
 
 @media screen and (min-width: 576px){
     #landing_page .container{
         padding: 4rem;
     }
-    #aboutme .about_page_item .col_right img{
-        width: 186px;
-        height: 180px;
-        margin-left: 20%;
+
+    #aboutme .about_page_item .col_left .col2 h5{
+        font-size: 0.7rem;
+    }
+    #aboutme .about_page_item .col_left .col2{
+        justify-content: start;
+    }
+    #aboutme .about_page_item .col_left .col2 .col_right1{
+        margin-left: 5rem;
+    }
+    #aboutme .about_page_item .col_right h5{
+        font-size: 0.7rem;
     }
 
 }
@@ -489,11 +627,14 @@ a{
     /* About me */
     #aboutme{
         padding: 2rem 2rem ;
+        overflow: hidden;
     }
-    #aboutme h4{
+    #aboutme h4,
+    #education h4{
         font-size: 1rem;
     }
-    #aboutme .moving1{
+    #aboutme .moving1,
+    #education .moving1{
         transform: rotate(250deg);
     }
     #aboutme .about_page_item{
@@ -506,7 +647,7 @@ a{
         margin-top: 4rem;
     }
     #aboutme .about_page_item .col_left h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     #aboutme .about_page_item .col_left p{
         font-size: 1rem;
@@ -523,9 +664,13 @@ a{
     }
 
     #aboutme .about_page_item .col_right img{
-        height: 200px;
-        width: 209px;
-        margin: 2rem 0;
+        height: 210px;
+        width: 196px;
+        margin: 0 0 3rem 0;
+        padding-top: 25px;
+        border: 5px solid rgba(182, 179, 179, 0.096);
+        border-radius: 20px;
+        opacity: 0;
     }
     #aboutme .about_page_item .col_right h5{
         font-size: 0.7rem;
@@ -533,6 +678,50 @@ a{
     }
     #aboutme .about_page_item .col_right h5 span{
         margin-right: 5px;
+    }
+
+
+
+
+    /* Education */
+    #education{
+        padding: 2rem;
+    }
+    #education .education_item .col1 .blank,
+    #education .education_item .col2 .blank,
+    #education .education_item .col3 .blank{
+    display: none;
+    }
+    #education .education_item .col1 .circle,
+    #education .education_item .col2 .circle,
+    #education .education_item .col3 .circle{
+        position: static;
+        width: 70px;
+        height: 70px;
+    }
+    #education .education_item .col1 p,
+    #education .education_item .col2 p,
+    #education .education_item .col3 p{
+        font-size: 0.7rem;
+    }
+    #education .education_item .col1 p:nth-child(1),
+    #education .education_item .col2 p:nth-child(1),
+    #education .education_item .col3 p:nth-child(1){
+        font-size: 1rem;
+    }
+    #education .education_item h1{
+        font-size: 1rem;
+    }
+    #education .education_item .col1 .circle span,
+    #education .education_item .col2 .circle span,
+    #education .education_item .col3 .circle span{
+        font-size: 0.4rem;
+        line-height: 12px;
+        margin-top: 18px;
+    }
+    #education .education_item .col1 .circle,
+    #education .education_item .col3 .circle{
+        margin-left: 2rem;
     }
 }
 
