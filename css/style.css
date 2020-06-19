@@ -540,7 +540,7 @@ a{
     padding: 3rem 0;
 }
 #skills .skills_items{
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     text-align: center;
     margin-top: 3rem;
@@ -627,7 +627,18 @@ a{
     #aboutme .about_page_item .col_right h5{
         font-size: 0.7rem;
     }
+    #skills{
+        padding: 5rem;
+    }
+    #education .education_item .line{
+        left: 8%;
+    }
 
+}
+@media (min-width: 769px){
+    #education .education_item .line{
+        left: 18%;
+    }
 }
 @media screen and (max-width: 576px){
     /* Landing Page */

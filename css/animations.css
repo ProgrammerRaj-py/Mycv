@@ -130,6 +130,129 @@
             animation: skillsbarfive 1s ease forwards ;
             animation-delay: 1.3s;
         }
+
+    }
+    @media (min-width: 420px) and (max-width: 768px){
+        /* AboutMe */
+        .aboutme_header2{
+            animation: aboutme_header 0.5s ease forwards;
+        }
+        .aboutme_img2{
+            animation:aboutme_img 0.5s ease-out forwards;
+        }
+        .aboutme_names2{
+            animation: aboutme_names 0.6s ease-in forwards;
+        }
+        .aboutme_obj2,
+        .aboutme_what2{
+            animation: aboutme_obj 0.6s ease-out forwards;
+        }
+        .aboutme_iknow,
+        .aboutme_iknow2{
+            animation: aboutme_iknow 0.5s linear forwards;
+        }
+        .aboutme_btn2{
+            animation: aboutme_btn 0.5s linear forwards;
+            margin-top: 0;
+        }
+
+        /* Education Section */
+        .education_header2{
+            animation: aboutme_btn 0.5s ease-in forwards;
+        }
+        .education_col12,
+        .education_col32{
+            animation: education_col13 0.6s ease-in-out forwards;
+        }
+        .education_col22{
+            animation: education_col2 0.6s ease-in-out forwards;
+        }
+
+
+        /* Skills */
+        .skills_header2{
+            animation: skills_header 0.5s ease-in forwards;
+        }
+        .skills_bar_ani2 .con .one{
+            animation: skillsbarone 1s ease forwards ;
+        }
+        .skills_bar_ani2 .con .two{
+            animation: skillsbartwo 1s ease forwards ;
+            animation-delay: 0.3s;
+        }
+        .skills_bar_ani2 .con .three{
+            animation: skillsbarthree 1s ease forwards ;
+            animation-delay: 0.6s;
+        }
+        .skills_bar_ani2 .con .four{
+            animation: skillsbarfour 1s ease forwards ;
+            animation-delay: 1s;
+        }
+        .skills_bar_ani2 .con .five{
+            animation: skillsbarfive 1s ease forwards ;
+            animation-delay: 1.3s;
+        }
+    }
+
+    @media (min-width: 769px){
+        /* AboutMe */
+        .aboutme_header2{
+            animation: aboutme_header 0.5s ease forwards;
+        }
+        .aboutme_img3{
+            animation:aboutme_img 0.5s ease-out forwards;
+        }
+        .aboutme_names3{
+            animation: aboutme_names 0.6s ease-in forwards;
+        }
+        .aboutme_what3,
+        .aboutme_obj3{
+            animation: aboutme_obj 0.6s ease-out forwards;
+        }
+        .aboutme_iknow3{
+            animation: aboutme_iknow 0.5s linear forwards;
+        }
+        .aboutme_btn3{
+            animation: aboutme_btn 0.5s linear forwards;
+            margin-top: 0;
+        }
+
+        /* Education Section */
+        .education_header3{
+            animation: aboutme_btn 0.5s ease-in forwards;
+        }
+        .education_col13,
+        .education_col33{
+            animation: education_col13 0.6s ease-in-out forwards;
+        }
+        .education_col23{
+            animation: education_col2 0.6s ease-in-out forwards;
+        }
+
+
+        /* Skills */
+        .skills_header3{
+            animation: skills_header 0.5s ease-in forwards;
+        }
+        .skills_bar_ani3 .con .one{
+            animation: skillsbarone 1s ease forwards ;
+        }
+        .skills_bar_ani3 .con .two{
+            animation: skillsbartwo 1s ease forwards ;
+            animation-delay: 0.3s;
+        }
+        .skills_bar_ani3 .con .three{
+            animation: skillsbarthree 1s ease forwards ;
+            animation-delay: 0.6s;
+        }
+        .skills_bar_ani3 .con .four{
+            animation: skillsbarfour 1s ease forwards ;
+            animation-delay: 1s;
+        }
+        .skills_bar_ani3 .con .five{
+            animation: skillsbarfive 1s ease forwards ;
+            animation-delay: 1.3s;
+        }
     }
 
     /* keyfreams landing page */
