@@ -18,13 +18,15 @@
     #landing_page .container .moving,
     #aboutme .moving,
     #education .moving,
-    #skills .moving{
+    #skills .moving,
+    #preloader .moving{
         animation: moving 2s linear infinite;
     }
     #landing_page .container .moving1,
     #aboutme .moving1,
     #education .moving1,
-    #skills .moving1{
+    #skills .moving1,
+    #preloader .moving1{
         animation: moving1 5s linear infinite;
     }
     #landing_page .container .moving2{
@@ -52,11 +54,16 @@
         animation: mystory 0.5s ease-in forwards;
         animation-delay: 1.8s;
     }
-    #landing_page .container nav .logo .bars .bar_up{
+    #landing_page .container nav .logo .bars .bar_up,
+    #preloader .logo .bars .bar_up{
         animation: updown_bar 1.5s ease-in-out infinite;
     }
-    #landing_page .container nav .logo .bars .bar_mid{
+    #landing_page .container nav .logo .bars .bar_mid,
+    #preloader .logo .bars .bar_mid{
         animation: updown_bar_mid 1.5s linear infinite;
+    }
+    #preloader .preloader_bar{
+        animation: preloader_bar 4s ease-in-out forwards;
     }
     .typer::after{
         content: "";
@@ -69,25 +76,24 @@
     .hide_drop{
         animation: hide_down 0.5s ease forwards;
     }
+    #preloader .preloader_a::after{
+        animation: preloader_a 3.8s ease-in forwards;
+    }
 
 
-
-
-    /* Mobile screen */
-    @media screen and (max-width: 420px){
-        .aboutme_header{
-            animation: aboutme_header 0.5s ease forwards;
-        }
-        .aboutme_img{
-            animation:aboutme_img 0.5s ease-out forwards;
-        }
-        .aboutme_names{
-            animation: aboutme_names 0.6s ease-in forwards;
-        }
-        .aboutme_obj,
-        .aboutme_what{
-            animation: aboutme_obj 0.6s ease-out forwards;
-        }
+    .aboutme_header{
+        animation: aboutme_header 0.5s ease forwards;
+    }
+    .aboutme_img{
+        animation:aboutme_img 0.5s ease-out forwards;
+    }
+    .aboutme_names{
+        animation: aboutme_names 0.6s ease-in forwards;
+    }
+    .aboutme_obj,
+    .aboutme_what{
+        animation: aboutme_obj 0.6s ease-out forwards;
+    }
         .aboutme_iknow{
             animation: aboutme_iknow 0.5s linear forwards;
         }
@@ -131,131 +137,35 @@
             animation-delay: 1.3s;
         }
 
-    }
-    @media (min-width: 420px) and (max-width: 768px){
-        /* AboutMe */
-        .aboutme_header2{
-            animation: aboutme_header 0.5s ease forwards;
-        }
-        .aboutme_img2{
-            animation:aboutme_img 0.5s ease-out forwards;
-        }
-        .aboutme_names2{
-            animation: aboutme_names 0.6s ease-in forwards;
-        }
-        .aboutme_obj2,
-        .aboutme_what2{
-            animation: aboutme_obj 0.6s ease-out forwards;
-        }
-        .aboutme_iknow,
-        .aboutme_iknow2{
-            animation: aboutme_iknow 0.5s linear forwards;
-        }
-        .aboutme_btn2{
-            animation: aboutme_btn 0.5s linear forwards;
-            margin-top: 0;
-        }
-
-        /* Education Section */
-        .education_header2{
-            animation: aboutme_btn 0.5s ease-in forwards;
-        }
-        .education_col12,
-        .education_col32{
-            animation: education_col13 0.6s ease-in-out forwards;
-        }
-        .education_col22{
-            animation: education_col2 0.6s ease-in-out forwards;
-        }
-
-
-        /* Skills */
-        .skills_header2{
-            animation: skills_header 0.5s ease-in forwards;
-        }
-        .skills_bar_ani2 .con .one{
-            animation: skillsbarone 1s ease forwards ;
-        }
-        .skills_bar_ani2 .con .two{
-            animation: skillsbartwo 1s ease forwards ;
-            animation-delay: 0.3s;
-        }
-        .skills_bar_ani2 .con .three{
-            animation: skillsbarthree 1s ease forwards ;
-            animation-delay: 0.6s;
-        }
-        .skills_bar_ani2 .con .four{
-            animation: skillsbarfour 1s ease forwards ;
-            animation-delay: 1s;
-        }
-        .skills_bar_ani2 .con .five{
-            animation: skillsbarfive 1s ease forwards ;
-            animation-delay: 1.3s;
-        }
-    }
-
-    @media (min-width: 769px) and (max-width:810px){
-        /* AboutMe */
-        .aboutme_header2{
-            animation: aboutme_header 0.5s ease forwards;
-        }
-        .aboutme_img3{
-            animation:aboutme_img 0.5s ease-out forwards;
-        }
-        .aboutme_names3{
-            animation: aboutme_names 0.6s ease-in forwards;
-        }
-        .aboutme_what3,
-        .aboutme_obj3{
-            animation: aboutme_obj 0.6s ease-out forwards;
-        }
-        .aboutme_iknow3{
-            animation: aboutme_iknow 0.5s linear forwards;
-        }
-        .aboutme_btn3{
-            animation: aboutme_btn 0.5s linear forwards;
-            margin-top: 0;
-        }
-
-        /* Education Section */
-        .education_header3{
-            animation: aboutme_btn 0.5s ease-in forwards;
-        }
-        .education_col13,
-        .education_col33{
-            animation: education_col13 0.6s ease-in-out forwards;
-        }
-        .education_col23{
-            animation: education_col2 0.6s ease-in-out forwards;
-        }
-
-
-        /* Skills */
-        .skills_header3{
-            animation: skills_header 0.5s ease-in forwards;
-        }
-        .skills_bar_ani3 .con .one{
-            animation: skillsbarone 1s ease forwards ;
-        }
-        .skills_bar_ani3 .con .two{
-            animation: skillsbartwo 1s ease forwards ;
-            animation-delay: 0.3s;
-        }
-        .skills_bar_ani3 .con .three{
-            animation: skillsbarthree 1s ease forwards ;
-            animation-delay: 0.6s;
-        }
-        .skills_bar_ani3 .con .four{
-            animation: skillsbarfour 1s ease forwards ;
-            animation-delay: 1s;
-        }
-        .skills_bar_ani3 .con .five{
-            animation: skillsbarfive 1s ease forwards ;
-            animation-delay: 1.3s;
-        }
-    }
 
     /* keyfreams landing page */
+    @keyframes preloader_bar{
+        0%{
+            width: 0;
+        }
+
+        30%{
+            width: 45%;
+        }
+        50%{
+            width: 55%;
+        }
+        100%{
+            width: 100% ;
+        }
+    }
+    @keyframes preloader_a{
+        0%{
+            content: ".  Welcome  .";
+        }
+        50%{
+            content: ".  .  Welcome  .  .";
+        }
+        100%{
+            content: ".  .  .  Welcome  .  .  .";
+        }
+    }
+
     @keyframes namebar_moving {
         0%{
             width: 5px;
