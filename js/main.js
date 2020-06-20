@@ -27,9 +27,20 @@ const skills_bar_ani = document.getElementById("skills_bar_ani")
 const preloader = document.getElementById("preloader")
 const mainpage = document.getElementById("mainpage")
 
-
-
-
+// Portfolio section
+const portfolio_header1 = document.getElementById("portfolio_header1")
+const portfolio_header2 = document.getElementById("portfolio_header2")
+const portfolio_header3 = document.getElementById("portfolio_header3")
+const portfolio_header4 = document.getElementById("portfolio_header4")
+const img1 = document.getElementById("img1")
+const img2 = document.getElementById("img2")
+const img3 = document.getElementById("img3")
+const img4 = document.getElementById("img4")
+const img5 = document.getElementById("img5")
+const img6 = document.getElementById("img6")
+const img7 = document.getElementById("img7")
+const img8 = document.getElementById("img8")
+const img9 = document.getElementById("img9")
 
 // Drop Down
 toggler.addEventListener("click", drop);
@@ -49,6 +60,46 @@ setTimeout(function() {
 // Animations
 let screenPosition = window.innerHeight /1.4;
 window.addEventListener("scroll",function(){
+    // Portfolio Section
+    if (img9.getBoundingClientRect().top < screenPosition){
+        img9.classList.add("img9")
+    }
+    if (img8.getBoundingClientRect().top < screenPosition){
+        img8.classList.add("img8")
+    }
+    if (img7.getBoundingClientRect().top < screenPosition){
+        img7.classList.add("img7")
+    }
+    if (portfolio_header4.getBoundingClientRect().top < screenPosition){
+        portfolio_header4.classList.add("portfolio_header4")
+    }
+    if (img6.getBoundingClientRect().top < screenPosition){
+        img6.classList.add("img6")
+    }
+    if (img5.getBoundingClientRect().top < screenPosition){
+        img5.classList.add("img5")
+    }
+    if (img4.getBoundingClientRect().top < screenPosition){
+        img4.classList.add("img4")
+    }
+    if (portfolio_header3.getBoundingClientRect().top < screenPosition){
+        portfolio_header3.classList.add("portfolio_header3")
+    }
+    if (img3.getBoundingClientRect().top < screenPosition){
+        img3.classList.add("img3")
+    }
+    if (img2.getBoundingClientRect().top < screenPosition){
+        img2.classList.add("img2")
+    }
+    if (img1.getBoundingClientRect().top < screenPosition){
+        img1.classList.add("img1")
+    }
+    if (portfolio_header2.getBoundingClientRect().top < screenPosition){
+        portfolio_header2.classList.add("portfolio_header2")
+    }
+    if (portfolio_header1.getBoundingClientRect().top < screenPosition){
+        portfolio_header1.classList.add("portfolio_header1")
+    }
 
     //Skills Section  
     if (skills_bar_ani.getBoundingClientRect().top < screenPosition){

@@ -4,7 +4,8 @@
     #landing_page .landing_page_items .col_left .name_bar,
     #aboutme .name_bar,
     #education .name_bar,
-    #skills .name_bar{
+    #skills .name_bar,
+    #portfolio .name_bar{
         animation: namebar_moving 1.5s ease-in-out infinite;
         -webkit-animation:namebar_moving 1.5s ease-in-out infinite ;
         -moz-animation: namebar_moving 1.5s ease-in-out infinite;
@@ -79,6 +80,9 @@
     #preloader .preloader_a::after{
         animation: preloader_a 3.8s ease-in forwards;
     }
+    .portfolio_img_hide{
+        animation: portfolio_img_hide 0.7s ease-out forwards;
+    }
 
 
     .aboutme_header{
@@ -87,17 +91,24 @@
     .aboutme_img{
         animation:aboutme_img 0.5s ease-out forwards;
     }
-    .aboutme_names{
+    .aboutme_names,
+    .img8,
+    .img7{
         animation: aboutme_names 0.6s ease-in forwards;
     }
     .aboutme_obj,
-    .aboutme_what{
+    .aboutme_what,
+    .img9,
+    .img3,
+    .img2{
         animation: aboutme_obj 0.6s ease-out forwards;
     }
         .aboutme_iknow{
             animation: aboutme_iknow 0.5s linear forwards;
         }
-        .aboutme_btn{
+        .aboutme_btn,
+        .img1,
+        .img6{
             animation: aboutme_btn 0.5s linear forwards;
         }
 
@@ -106,15 +117,21 @@
             animation: aboutme_btn 0.5s ease-in forwards;
         }
         .education_col1,
-        .education_col3{
+        .education_col3,
+        .img5{
             animation: education_col13 0.6s ease-in-out forwards;
         }
-        .education_col2{
+        .education_col2,
+        .img4{
             animation: education_col2 0.6s ease-in-out forwards;
         }
 
         /* Skills */
-        .skills_header{
+        .skills_header,
+        .portfolio_header1,
+        .portfolio_header2,
+        .portfolio_header3,
+        .portfolio_header4{
             animation: skills_header 0.5s ease-in forwards;
         }
         .skills_bar_ani .con .one{
@@ -442,6 +459,15 @@
         100%{
             width: 50%;
         }
+    }
+    @keyframes portfolio_img_hide{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
+
     }
 
 /* } */

@@ -56,13 +56,16 @@ html{
     
 }
 #preloader .preloader_a{
-    margin-top: 3rem;
+    margin: 3.5rem 0 5.5rem;
     width: 50%;
     height: 7px;
     background-color: rgb(46, 46, 46);
     border-radius: 5rem;
     position: relative;
 }
+/* #preloader{
+    display: none;
+} */
 #mainpage{
     display: none;
     position: relative;
@@ -80,7 +83,20 @@ html{
 #education_col1,
 #education_col2,
 #education_col3,
-#skills_header{
+#skills_header,
+#portfolio_header1,
+#portfolio_header2,
+#portfolio_header3,
+#portfolio_header4,
+#img9,
+#img8,
+#img7,
+#img6,
+#img5,
+#img4,
+#img3,
+#img2,
+#img1{
     opacity: 0;
     overflow: hidden;
 }
@@ -345,7 +361,8 @@ html{
 #landing_page .landing_page_items .col_left .name_bar,
 #aboutme .name_bar,
 #education .name_bar,
-#skills .name_bar{
+#skills .name_bar,
+#portfolio .name_bar{
     width: 70px;
     height: 5px;
     background-color: rgb(255, 59, 0);
@@ -518,7 +535,8 @@ html{
     position: relative;
     overflow: hidden;
 }
-#education h4{
+#education h4,
+#portfolio h4{
     padding: 2.5rem 0 0.5rem 0;
     text-align: center;
     font-size: 1.5rem;
@@ -609,7 +627,8 @@ html{
 }
 
 /* Skills */
-#skills{
+#skills,
+#portfolio{
     background-color: #222222;
     width: 100%;
     position: relative;
@@ -687,6 +706,80 @@ html{
     width: 0;
 }
 
+
+
+/* Portfolio Section */
+#portfolio .name_bar{
+    height: 3px;
+}
+#portfolio .portfolio_items{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 6rem;
+}
+#portfolio .portfolio_items .portfolio_btn{
+    margin: auto;
+    padding: 0 2rem;
+    max-width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#portfolio .portfolio_items .portfolio_btn button{
+    background-color: transparent;
+    border: 2px solid rgba(255, 60, 0, 0.719);
+    color: #fff;
+    border-radius: 1rem;
+    outline: none;
+    height: 27px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#portfolio .portfolio_items button:hover{
+    border: 2px solid rgba(0, 162, 255, 0.575);
+    color: #fff;
+}
+#portfolio .portfolio_items .portfolio_btn button{
+    font-size: 0.8rem;
+}
+#portfolio .portfolio_items .portfolio_btn button:nth-child(1){
+    width: 4.2rem;
+    letter-spacing: 2px;
+}
+#portfolio .portfolio_items .portfolio_btn button:nth-child(2){
+    width: 5.5rem;
+    letter-spacing: 1px;
+}
+#portfolio .portfolio_items .portfolio_btn button:nth-child(3){
+    width: 9.5rem;
+    letter-spacing: 1px;
+}
+#portfolio .portfolio_items .portfolio_btn button:nth-child(4){
+    width: 10rem;
+    letter-spacing: 1px;
+}
+
+#portfolio .portfolio_items .portfolio_imgs{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#portfolio .portfolio_items .portfolio_imgs h4{
+    margin: 2rem 0;
+    color: rgba(255, 60, 0, 0.719);
+}
+
+#portfolio .portfolio_items .portfolio_imgs img{
+    width: 25%;
+    height: 50%;
+    margin: 0 1rem;
+
+}
 
 @media screen and (min-width: 576px){
     #landing_page .container{
@@ -937,6 +1030,52 @@ html{
         top: -200%;
         font-size: 0.75rem;
     }
+
+    /* Portfolio */
+    
+    #portfolio h4{
+        font-size: 1.3rem;
+    }
+    #portfolio .portfolio_items{
+        margin-top: 1rem;
+    }
+    #portfolio .portfolio_items .portfolio_btn{
+        padding: 3rem;
+        flex-direction: column;
+    }
+    #portfolio .portfolio_items .portfolio_btn button{
+        margin-bottom: 1rem;
+        font-size: 0.7rem;
+    }
+    #portfolio .portfolio_items .portfolio_btn buttton:nth-child(1){
+        width: 50px;
+    }
+    #portfolio .portfolio_items .portfolio_imgs{
+        margin-top: 1rem;
+    }
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img1,
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img2,
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img1 img,
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 img,
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 img{
+        width: 70%;
+        height: 20%;
+        border-radius: 5px;
+        position: relative;
+    }
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img1 img:nth-last-child(2),
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 img:nth-last-child(2),
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 img:nth-last-child(2){
+        margin: 2rem 0;
+    }
+
+
 
 }
 
