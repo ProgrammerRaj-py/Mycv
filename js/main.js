@@ -42,6 +42,24 @@ const img7 = document.getElementById("img7")
 const img8 = document.getElementById("img8")
 const img9 = document.getElementById("img9")
 
+
+//Project Section
+const project1 = document.getElementById("project1")
+const project2 = document.getElementById("project2")
+const project3 = document.getElementById("project3")
+const project4 = document.getElementById("project4")
+
+// Contact Section
+const contact_header1 = document.getElementById("contact_header1")
+const contact_header2 = document.getElementById("contact_header2")
+const contact_icon1 = document.getElementById("contact_icon1")
+const contact_icon2 = document.getElementById("contact_icon2")
+const contact_icon3 = document.getElementById("contact_icon3")
+const contact_form = document.getElementById("contact_form")
+const contact_footer = document.getElementById("footer")
+const contact_success = document.getElementById("contact_success")
+const contact_submit = document.getElementById("contact_submit")
+
 // Drop Down
 toggler.addEventListener("click", drop);
 
@@ -58,8 +76,43 @@ setTimeout(function() {
 
 
 // Animations
-let screenPosition = window.innerHeight /1.4;
+let screenPosition = window.innerHeight /1.6;
 window.addEventListener("scroll",function(){
+    // Contact Section
+    if (contact_form.getBoundingClientRect().top < screenPosition){
+        contact_form.classList.add("aboutme_names")
+        // contact_success.innerHTML = "Successfully sent. I will contact you as soon as possible."
+    }
+    if (contact_header2.getBoundingClientRect().top < screenPosition){
+        contact_header2.classList.add("skills_header")
+    }
+    if (contact_icon3.getBoundingClientRect().top < screenPosition){
+        contact_icon3.classList.add("education_col2")
+    }
+    if (contact_icon2.getBoundingClientRect().top < screenPosition){
+        contact_icon2.classList.add("education_col1")
+    }
+    if (contact_icon1.getBoundingClientRect().top < screenPosition){
+        contact_icon1.classList.add("education_col2")
+    }
+    if (contact_header1.getBoundingClientRect().top < screenPosition){
+        contact_header1.classList.add("skills_header")
+    }
+
+    // Project Section
+    if (project4.getBoundingClientRect().top < screenPosition){
+        project4.classList.add("education_col2")
+    }
+    if (project3.getBoundingClientRect().top < screenPosition){
+        project3.classList.add("education_col1")
+    }
+    if (project2.getBoundingClientRect().top < screenPosition){
+        project2.classList.add("education_col2")
+    }
+    if (project1.getBoundingClientRect().top < screenPosition){
+        project1.classList.add("education_col1")
+    }
+
     // Portfolio Section
     if (img9.getBoundingClientRect().top < screenPosition){
         img9.classList.add("img9")

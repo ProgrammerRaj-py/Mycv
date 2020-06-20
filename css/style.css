@@ -96,7 +96,17 @@ html{
 #img4,
 #img3,
 #img2,
-#img1{
+#img1,
+#project1,
+#project2,
+#project3,
+#project4,
+#contact_header1,
+#contact_header2,
+#contact_icon1,
+#contact_icon2,
+#contact_icon3,
+#contact_form{
     opacity: 0;
     overflow: hidden;
 }
@@ -123,7 +133,10 @@ html{
 #aboutme .moving,
 #education .moving,
 #skills .moving,
-#preloader .moving{
+#preloader .moving,
+#portfolio .moving,
+#projects .moving,
+#contact .moving{
     position: absolute;
     z-index: 9;
     border-radius: 50%;
@@ -133,7 +146,10 @@ html{
 #aboutme .moving1,
 #education .moving1,
 #skills .moving1,
-#preloader .moving1{
+#preloader .moving1,
+#portfolio .moving1,
+#projects .moving,
+#contact .moving{
     position: absolute;
     z-index: 9;
     width: 100px;
@@ -147,7 +163,10 @@ html{
 #aboutme .moving:nth-child(1),
 #education .moving:nth-child(1),
 #skills .moving:nth-child(1),
-#preloader .moving:nth-child(1){
+#preloader .moving:nth-child(1),
+#portfolio .moving:nth-child(1),
+#projects .moving:nth-child(1),
+#contact .moving:nth-child(1){
     width: 10px;
     height: 10px;
     top: 27%;
@@ -158,7 +177,10 @@ html{
 #aboutme .moving:nth-child(2),
 #education .moving:nth-child(2),
 #skills .moving:nth-child(2),
-#preloader .moving:nth-child(2){
+#preloader .moving:nth-child(2),
+#portfolio .moving:nth-child(2),
+#projects .moving:nth-child(2),
+#contact .moving:nth-child(2){
     width: 10px;
     height: 10px;
     top: 60%;
@@ -170,7 +192,10 @@ html{
 #aboutme .moving:nth-child(3),
 #education .moving:nth-child(3),
 #skills .moving:nth-child(3),
-#preloader .moving:nth-child(3){
+#preloader .moving:nth-child(3),
+#portfolio .moving:nth-child(3),
+#projects .moving:nth-child(3),
+#contact .moving:nth-child(3){
     width: 10px;
     height: 10px;
     bottom: 17%;
@@ -180,7 +205,10 @@ html{
 #aboutme .moving:nth-child(4),
 #education .moving:nth-child(4),
 #skills .moving:nth-child(4),
-#preloader .moving:nth-child(4){
+#preloader .moving:nth-child(4),
+#portfolio .moving:nth-child(4),
+#projects .moving:nth-child(4),
+#contact .moving:nth-child(4){
     width: 10px;
     height: 10px;
     top: 10%;
@@ -192,7 +220,10 @@ html{
 #aboutme .moving:nth-child(5),
 #education .moving:nth-child(5),
 #skills .moving:nth-child(5),
-#preloader .moving:nth-child(5){
+#preloader .moving:nth-child(5),
+#portfolio .moving:nth-child(5),
+#projects .moving:nth-child(5),
+#contact .moving:nth-child(5){
     width: 6px;
     height: 6px;
     right: 7%;
@@ -204,7 +235,10 @@ html{
 #aboutme .moving:nth-child(6),
 #education .moving:nth-child(6),
 #skills .moving:nth-child(6),
-#preloader .moving:nth-child(6){
+#preloader .moving:nth-child(6),
+#portfolio .moving:nth-child(6),
+#projects .moving:nth-child(6),
+#contact .moving:nth-child(6){
     width: 5px;
     height: 5px;
     top: 45%;
@@ -216,7 +250,10 @@ html{
 #aboutme .moving:nth-child(7),
 #education .moving:nth-child(7),
 #skills .moving:nth-child(7),
-#preloader .moving:nth-child(7){
+#preloader .moving:nth-child(7),
+#portfolio .moving:nth-child(7),
+#projects .moving:nth-child(7),
+#contact .moving:nth-child(7){
     width: 8px;
     height: 8px;
     top: 95%;
@@ -227,7 +264,10 @@ html{
 #aboutme .moving:nth-child(8),
 #education .moving:nth-child(8),
 #skills .moving:nth-child(8),
-#preloader .moving:nth-child(8){
+#preloader .moving:nth-child(8),
+#portfolio .moving:nth-child(8),
+#projects .moving:nth-child(8),
+#contact .moving:nth-child(8){
     width: 10px;
     height: 10px;
     top: 40%;
@@ -238,7 +278,10 @@ html{
 #aboutme .moving:nth-child(9),
 #education .moving:nth-child(9),
 #skills .moving:nth-child(9),
-#preloader .moving:nth-child(9){
+#preloader .moving:nth-child(9),
+#portfolio .moving:nth-child(9),
+#projects .moving:nth-child(9),
+#contact .moving:nth-child(9){
     width: 100px;
     height: 2px;
     top: 47%;
@@ -250,13 +293,21 @@ html{
 #aboutme .moving:nth-child(10),
 #education .moving:nth-child(10),
 #skills .moving:nth-child(10),
-#preloader .moving:nth-child(10){
+#preloader .moving:nth-child(10),
+#portfolio .moving:nth-child(10),
+#projects .moving:nth-child(10){
     width: 100px;
     height: 2px;
     top: 7%;
     left: 5%;
+    transform: rotate(90deg);  
+}
+#contact .moving:nth-child(10){
+    width: 100px;
+    height: 2px;
+    top: 7%;
+    right: 5%;
     transform: rotate(90deg);
-    
 }
 #landing_page .container nav{
     max-width: 100%;
@@ -362,7 +413,8 @@ html{
 #aboutme .name_bar,
 #education .name_bar,
 #skills .name_bar,
-#portfolio .name_bar{
+#portfolio .name_bar,
+#contact .name_bar{
     width: 70px;
     height: 5px;
     background-color: rgb(255, 59, 0);
@@ -536,7 +588,8 @@ html{
     overflow: hidden;
 }
 #education h4,
-#portfolio h4{
+#portfolio h4,
+#contact h4{
     padding: 2.5rem 0 0.5rem 0;
     text-align: center;
     font-size: 1.5rem;
@@ -628,7 +681,10 @@ html{
 
 /* Skills */
 #skills,
-#portfolio{
+#portfolio,
+#projects,
+#contact,
+#footer{
     background-color: #222222;
     width: 100%;
     position: relative;
@@ -778,7 +834,144 @@ html{
     width: 25%;
     height: 50%;
     margin: 0 1rem;
+    position: relative;
+    border: 7px solid rgba(54, 53, 53, 0.411);
+    border-radius: 5px;
 
+}
+
+/* Projects */
+#projects{
+    height: 40vh;
+}
+#projects .project_info{
+    max-width: 50rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 3rem;
+}
+#projects .project_info i{
+    font-size: 2rem;
+    color: rgb(255, 59, 0);
+}
+#projects .project_info h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+#projects .project_info p{
+    font-size: 1rem;
+    color: rgb(131, 128, 128);
+    font-weight: bold;
+    word-spacing: 1px;
+}
+
+/* contact */
+#contact{
+    padding: 3rem 0 0;
+}
+
+#contact .name_bar{
+    height: 3px;
+}
+#contact .contact_items{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+#contact .contact_items .contact_icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}
+#contact .contact_items .contact_icons .contact_icon_circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 60, 0, 0.801);
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 1.5rem;
+}
+#contact .contact_items .contact_icons .contact_icon_circle i{
+    font-size: 1.5rem ;
+    margin-top: 30%;
+}
+#contact .contact_items .contact_icons p{
+    color: rgb(148, 148, 148);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+#contact .contact_items h4{
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+#contact .contact_items form{
+    max-width: 60rem;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#contact .contact_items form input{
+    background-color: #222222;
+    border:none;
+    border-bottom: 3px solid rgb(255, 59, 0);
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+    height: 3rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding: 0 1.5rem;
+    outline: none;
+    font-weight: bold;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+#contact .contact_items form button{
+    border: 2px solid rgb(255, 59, 0);
+    background-color: #222222;
+    color: #ffffff;
+    height: 2.3rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+#contact .contact_items form button:hover{
+    border-color: rgb(0, 161, 255);
+}
+#contact_success{
+    color: rgb(21, 197, 21);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+}
+#footer{
+    padding: 0.5rem 0;
+    margin: auto;
+    text-align: center;
+    font-size: 0.7rem;
+    word-spacing: 2px;
+    overflow: hidden;
+}
+#footer p{
+    color: rgb(121, 120, 120);
+    font-weight: bold;
+}
+#footer i{
+    color: rgb(255, 59, 0);
+}
+#footer span{
+    color: rgba(0, 162, 255, 0.932);
+    font-weight: bolder;
+    letter-spacing: 1px;
 }
 
 @media screen and (min-width: 576px){
@@ -1069,13 +1262,52 @@ html{
         border-radius: 5px;
         position: relative;
     }
-    #portfolio .portfolio_items .portfolio_imgs .portfolio_img1 img:nth-last-child(2),
-    #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 img:nth-last-child(2),
-    #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 img:nth-last-child(2){
-        margin: 2rem 0;
+
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img1 a:nth-last-child(2),
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 a:nth-last-child(2),
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 a:nth-last-child(2){
+        margin: 2rem 0 !important;
     }
 
+    /* Projects */
+    #projects{
+        height: auto;
+    }
+    #projects .project_info{
+        flex-direction: column;
+    }
+    .project_info2,
+    .project_info4{
+        margin: 4rem 0;
+    }
 
+    /* Contact */
+    #contact .contact_items .contact_icons{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    #contact .contact_items .contact_icons .contact_icon_circle{
+        width: 50px;
+        height: 50px;
+    }
+    #contact .contact_items .contact_icons .contact_icon_circle i{
+        font-size: 1.2rem;
+    }
+    #contact .contact_items .contact_icons .contact_icon2{
+        margin: 3rem 0;
+    }
+    #contact .contact_items .contact_icons .contact_icon3 .contact_icon_circle{
+        margin-left: 39%;
+    }
+    #contact_header2{
+        padding: 1rem 2.5rem !important;
+    }
+    #contact .contact_items form{
+        padding: 0 3rem;
+    }
+    #contact .contact_items input{
+        padding: 0 0.5rem !important;
+    }
 
 }
 

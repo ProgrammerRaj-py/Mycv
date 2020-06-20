@@ -5,7 +5,8 @@
     #aboutme .name_bar,
     #education .name_bar,
     #skills .name_bar,
-    #portfolio .name_bar{
+    #portfolio .name_bar,
+    #contact .name_bar{
         animation: namebar_moving 1.5s ease-in-out infinite;
         -webkit-animation:namebar_moving 1.5s ease-in-out infinite ;
         -moz-animation: namebar_moving 1.5s ease-in-out infinite;
@@ -20,14 +21,20 @@
     #aboutme .moving,
     #education .moving,
     #skills .moving,
-    #preloader .moving{
+    #preloader .moving,
+    #portfolio .moving,
+    #projects .moving,
+    #contact .moving{
         animation: moving 2s linear infinite;
     }
     #landing_page .container .moving1,
     #aboutme .moving1,
     #education .moving1,
     #skills .moving1,
-    #preloader .moving1{
+    #preloader .moving1,
+    #portfolio .moving1,
+    #projects .moving1,
+    #contact .moving1{
         animation: moving1 5s linear infinite;
     }
     #landing_page .container .moving2{
@@ -152,6 +159,9 @@
         .skills_bar_ani .con .five{
             animation: skillsbarfive 1s ease forwards ;
             animation-delay: 1.3s;
+        }
+        #footer i{
+            animation: footer_love 1s ease-in-out infinite;
         }
 
 
@@ -468,6 +478,23 @@
             transform: scale(0);
         }
 
+    }
+    @keyframes footer_love{
+        0%{
+            transform: scale(0);
+        }
+        45%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(0);
+        }
+        70%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
     }
 
 /* } */
