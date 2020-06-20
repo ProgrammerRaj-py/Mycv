@@ -408,7 +408,7 @@
             width: 0;
         }
         100%{
-            width: 90% !important;
+            width: 90%;
         }
     }
     @keyframes skillsbartwo{
@@ -416,7 +416,7 @@
             width: 0;
         }
         100%{
-            width: 70% !important;
+            width: 70%;
         }
     }
     @keyframes skillsbarthree{
@@ -424,7 +424,7 @@
             width: 0;
         }
         100%{
-            width: 80% !important;
+            width: 80%;
         }
     }
     @keyframes skillsbarfour{
@@ -432,7 +432,7 @@
             width: 0;
         }
         100%{
-            width: 60% !important;
+            width: 60%;
         }
     }
     @keyframes skillsbarfive{
@@ -440,7 +440,7 @@
             width: 0;
         }
         100%{
-            width: 50% !important;
+            width: 50%;
         }
     }
 
