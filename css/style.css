@@ -1069,9 +1069,9 @@ html{
         border-radius: 5px;
         position: relative;
     }
-    #portfolio .portfolio_items .portfolio_imgs .portfolio_img1 img:nth-last-child(2),
-    #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 img:nth-last-child(2),
-    #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 img:nth-last-child(2){
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img1 a:nth-last-child(2),
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 a:nth-last-child(2),
+    #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 a:nth-last-child(2){
         margin: 2rem 0;
     }
 
