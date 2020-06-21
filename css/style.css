@@ -1258,7 +1258,6 @@ html{
     #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 img,
     #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 img{
         width: 70%;
-        height: 20%;
         border-radius: 5px;
         position: relative;
     }
