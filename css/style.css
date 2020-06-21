@@ -910,14 +910,14 @@ html{
     margin: 2rem 0;
     font-size: 1rem;
 }
-#contact .contact_items form{
+#contact .contact_items .form{
     max-width: 60rem;
     margin: 5rem auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
-#contact .contact_items form input{
+#contact .contact_items .form input{
     background-color: #222222;
     border:none;
     border-bottom: 3px solid rgb(255, 59, 0);
@@ -932,7 +932,7 @@ html{
     transition: 0.5s;
     letter-spacing: 2px;
 }
-#contact .contact_items form button{
+#contact .contact_items .form button{
     border: 2px solid rgb(255, 59, 0);
     background-color: #222222;
     color: #ffffff;
@@ -944,7 +944,7 @@ html{
     outline: none;
     cursor: pointer;
 }
-#contact .contact_items form button:hover{
+#contact .contact_items .form button:hover{
     border-color: rgb(0, 161, 255);
 }
 #contact_success{
@@ -1258,6 +1258,7 @@ html{
     #portfolio .portfolio_items .portfolio_imgs .portfolio_img2 img,
     #portfolio .portfolio_items .portfolio_imgs .portfolio_img3 img{
         width: 70%;
+        height: 20%;
         border-radius: 5px;
         position: relative;
     }
@@ -1301,7 +1302,7 @@ html{
     #contact_header2{
         padding: 1rem 2.5rem !important;
     }
-    #contact .contact_items form{
+    #contact .contact_items .form{
         padding: 0 3rem;
     }
     #contact .contact_items input{
