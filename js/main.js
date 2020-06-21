@@ -58,6 +58,11 @@ const contact_icon3 = document.getElementById("contact_icon3")
 const contact_form = document.getElementById("contact_form")
 const contact_footer = document.getElementById("footer")
 const contact_success = document.getElementById("contact_success")
+
+var contact_name = document.getElementById("contact_name")
+var contact_email = document.getElementById("contact_email")
+var contact_subject = document.getElementById("contact_subject")
+var contact_msg = document.getElementById("contact_msg")
 const contact_submit = document.getElementById("contact_submit")
 
 // Drop Down
@@ -73,6 +78,25 @@ setTimeout(function() {
     preloader.style.display= "none"
     mainpage.style.display= "block"
 }, 4100);
+
+// Email Send 
+contact_submit.addEventListener("click",function(){
+    // console.log(contact_name.value,contact_subject.value,contact_msg.value,contact_email.value)
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "mazumderraj63@gmail.com",
+        Password : "RAJraj123456789",
+        To : 'rajmajumdar182@gmail.com',
+        From : "mazumderraj63@gmail.com",
+        Subject : contact_subject.value,
+        Body : "<h3>Name: "+ contact_name.value +"<br><br>Email: " + contact_email.value + "<br><br> Massage: " + contact_msg.value +"</h3>"
+    }).then(
+      message => contact_success.innerHTML = "Successfuly Sent. I will contact You soon."
+    );
+    
+})
+
+
 
 
 // Animations
@@ -202,3 +226,21 @@ window.addEventListener("scroll",function(){
         aboutme_header.classList.add("aboutme_header")
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// smtp server
+var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
