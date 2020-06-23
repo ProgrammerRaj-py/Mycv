@@ -93,7 +93,10 @@ contact_submit.addEventListener("click",function(){
     }).then(
       message => contact_success.innerHTML = "Successfuly Sent. I will contact You soon."
     );
-    
+    contact_name.value = "";
+    contact_email.value = "";
+    contact_msg.value = "";
+    contact_subject.value = "";
 })
 
 
