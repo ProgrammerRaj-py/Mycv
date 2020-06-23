@@ -937,7 +937,11 @@ html{
     background-color: #222222;
     color: #ffffff;
     height: 2.3rem;
-    border-radius: 1rem;
+<<<<<<< HEAD
+    border-radius: 0.4rem;
+=======
+    border-radius: 0.6rem;
+>>>>>>> 73ac871d8d4f3dc84334eb0d13996342ac93d7f4
     margin-top: 2rem;
     letter-spacing: 2px;
     transition: 0.5s;
@@ -968,7 +972,7 @@ html{
 #footer i{
     color: rgb(255, 59, 0);
 }
-#footer span{
+#footer span a{
     color: rgba(0, 162, 255, 0.932);
     font-weight: bolder;
     letter-spacing: 1px;
